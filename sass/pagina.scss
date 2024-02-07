@@ -1,0 +1,94 @@
+
+
+.inicio{
+    font-family: "Young Serif";
+    h1{
+        margin: 1em;
+        font-size: 40px;
+        font-weight: 700;
+        // background-color: rgb(218, 65, 65);
+    }
+
+    p{
+        // background-color: rgb(207, 84, 84);
+        margin: 2.2em;
+        width: 270px;
+        font-size: large;
+    }
+
+    .preparacion{
+        margin: 2em 3.3em;
+
+        h3{
+            color: brown;
+            font-size: large;
+            font-weight: 700;
+        }
+        ul{
+            li{
+                margin: 1em 2em;
+            }
+        }
+    }
+}
+
+
+.Ingredientes{
+
+    h3{
+        color: brown;
+        margin: 1em;
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    ul{
+        li{
+            margin: 1em 3.5em;
+        }
+    }
+
+    ol{
+        margin: 1em 2.3em;
+
+        li{
+            margin: 1em;
+        }
+    }
+
+    p{
+        // background-color: rgb(190, 146, 146);
+        margin: 1.6em;
+        width: 320px;
+        font-size: large;
+    }
+
+    .nutrientes{
+        ul{
+            display: grid;
+            border-color: black solid 6px;
+            grid-template-columns:repeat(2, 150px) ;
+            list-style-type: none;
+            
+
+            .gramos{
+                color:brown;
+                font-size: 18px;
+                font-weight: 900;
+            }
+           
+        }
+
+    }
+}
+
+.attribution{
+    margin: 1em 2em;
+    align-items: center;
+    a{
+    
+      color: blue;  
+    }
+}
+
+
