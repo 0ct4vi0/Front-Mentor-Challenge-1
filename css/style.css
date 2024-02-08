@@ -69,69 +69,101 @@ body {
   hyphens: auto;
 }
 
-.inicio {
+body #cuerpo .inicio {
   font-family: "Young Serif";
 }
-.inicio h1 {
+body #cuerpo .inicio h1 {
   margin: 1em;
   font-size: 40px;
   font-weight: 700;
 }
-.inicio p {
+body #cuerpo .inicio p {
   margin: 2.2em;
   width: 270px;
   font-size: large;
 }
-.inicio .preparacion {
+body #cuerpo .inicio .preparacion {
   margin: 2em 3.3em;
 }
-.inicio .preparacion h3 {
+body #cuerpo .inicio .preparacion h3 {
   color: brown;
   font-size: large;
   font-weight: 700;
 }
-.inicio .preparacion ul li {
+body #cuerpo .inicio .preparacion ul li {
   margin: 1em 2em;
 }
-
-.Ingredientes h3 {
+@media screen and (min-width: 480px) {
+  body #cuerpo .inicio img {
+    width: 650px;
+    margin: auto;
+    padding-top: 2em;
+    border-radius: 18px;
+  }
+  body #cuerpo .inicio p {
+    width: 600px;
+    font-size: 16px;
+    margin: 0em 2.5em;
+  }
+}
+body #cuerpo .Ingredientes h3 {
   color: brown;
   margin: 1em;
   font-size: 30px;
   font-weight: 700;
 }
-.Ingredientes ul li {
+body #cuerpo .Ingredientes ul li {
   margin: 1em 3.5em;
 }
-.Ingredientes ol {
+body #cuerpo .Ingredientes ol {
   margin: 1em 2.3em;
 }
-.Ingredientes ol li {
+body #cuerpo .Ingredientes ol li {
   margin: 1em;
 }
-.Ingredientes p {
+body #cuerpo .Ingredientes p {
   margin: 1.6em;
   width: 320px;
   font-size: large;
 }
-.Ingredientes .nutrientes ul {
+body #cuerpo .Ingredientes .nutrientes ul {
   display: grid;
   border-color: black solid 6px;
   grid-template-columns: repeat(2, 150px);
   list-style-type: none;
 }
-.Ingredientes .nutrientes ul .gramos {
+body #cuerpo .Ingredientes .nutrientes ul .gramos {
   color: brown;
   font-size: 18px;
   font-weight: 900;
 }
-
-.attribution {
+@media screen and (min-width: 480px) {
+  body #cuerpo .Ingredientes p {
+    width: 600px;
+    font-size: 17px;
+  }
+  body #cuerpo .Ingredientes .nutrientes ul {
+    grid-template-columns: repeat(2, 320px);
+  }
+}
+body #cuerpo .attribution {
   margin: 1em 2em;
   align-items: center;
 }
-.attribution a {
+body #cuerpo .attribution a {
   color: blue;
+}
+@media screen and (min-width: 480px) {
+  body #cuerpo {
+    background-color: white;
+  }
+}
+@media screen and (min-width: 480px) {
+  body {
+    width: 45em;
+    margin: 3em auto;
+    background-color: rgb(245, 219, 225);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

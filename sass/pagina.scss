@@ -1,94 +1,141 @@
 
+@import "mixin.scss";
+body{
+    #cuerpo{
+    
+        .inicio{
+     
+        font-family: "Young Serif";
+            h1{
+                margin: 1em;
+                font-size: 40px;
+                font-weight: 700;
+                // background-color: rgb(218, 65, 65);
+            }
+    
+            p{
+                // background-color: rgb(207, 84, 84);
+                margin: 2.2em;
+                width: 270px;
+                font-size: large;
+            }
+    
+        .preparacion{
+                margin: 2em 3.3em;
+    
+                h3{
+                    color: brown;
+                    font-size: large;
+                    font-weight: 700;
+                }
+                ul{
+                    li{
+                        margin: 1em 2em;
+                    }
+                }
+        }
+    
+            @include movil(){
+                img{
+                    width: 650px;
+                    margin: auto;
+                    padding-top: 2em;
+                    border-radius: 18px;
+                }
 
-.inicio{
-    font-family: "Young Serif";
-    h1{
-        margin: 1em;
-        font-size: 40px;
-        font-weight: 700;
-        // background-color: rgb(218, 65, 65);
-    }
-
-    p{
-        // background-color: rgb(207, 84, 84);
-        margin: 2.2em;
-        width: 270px;
-        font-size: large;
-    }
-
-    .preparacion{
-        margin: 2em 3.3em;
-
+                p{
+                    // background-color: red;
+                    width: 600px;
+                    font-size: 16px;
+                    margin: 0em 2.5em;
+                }
+            }
+        }
+    
+    
+    .Ingredientes{
+    
         h3{
             color: brown;
-            font-size: large;
+            margin: 1em;
+            font-size: 30px;
             font-weight: 700;
         }
+    
         ul{
             li{
-                margin: 1em 2em;
+                margin: 1em 3.5em;
             }
         }
-    }
-}
-
-
-.Ingredientes{
-
-    h3{
-        color: brown;
-        margin: 1em;
-        font-size: 30px;
-        font-weight: 700;
-    }
-
-    ul{
-        li{
-            margin: 1em 3.5em;
-        }
-    }
-
-    ol{
-        margin: 1em 2.3em;
-
-        li{
-            margin: 1em;
-        }
-    }
-
-    p{
-        // background-color: rgb(190, 146, 146);
-        margin: 1.6em;
-        width: 320px;
-        font-size: large;
-    }
-
-    .nutrientes{
-        ul{
-            display: grid;
-            border-color: black solid 6px;
-            grid-template-columns:repeat(2, 150px) ;
-            list-style-type: none;
-            
-
-            .gramos{
-                color:brown;
-                font-size: 18px;
-                font-weight: 900;
-            }
-           
-        }
-
-    }
-}
-
-.attribution{
-    margin: 1em 2em;
-    align-items: center;
-    a{
     
-      color: blue;  
+        ol{
+            margin: 1em 2.3em;
+    
+            li{
+                margin: 1em;
+            }
+        }
+    
+        p{
+            // background-color: rgb(190, 146, 146);
+            margin: 1.6em;
+            width: 320px;
+            font-size: large;
+        }
+    
+        .nutrientes{
+            ul{
+                display: grid;
+                border-color: black solid 6px;
+                grid-template-columns:repeat(2, 150px) ;
+                list-style-type: none;
+                
+    
+                .gramos{
+                    color:brown;
+                    font-size: 18px;
+                    font-weight: 900;
+                }
+               
+            }
+
+        }
+        @include movil(){
+             p{
+                // background-color: red;
+                width: 600px;
+                font-size: 17px;
+             }  
+              
+             .nutrientes{
+
+                ul{
+                    grid-template-columns:repeat(2, 320px) ;
+                }
+             }
+        }
+    }
+    
+        .attribution{
+            margin: 1em 2em;
+            align-items: center;
+            a{
+        
+          color: blue;  
+        }
+    }
+    
+        @include movil(){
+            background-color: white;
+
+        }
+    }
+
+    @include movil(){
+        width: 45em;
+        margin: 3em auto;
+        background-color: rgb(245, 219, 225);
+       
     }
 }
-
 
